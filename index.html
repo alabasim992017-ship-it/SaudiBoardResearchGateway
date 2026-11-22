@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b46">
+<title>Saudi Board Research Gateway</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#f5f7fa;color:#243449;line-height:1.8}
+header{background:#102b46;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:19px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{background:linear-gradient(135deg,#102b46,#176b78);color:white;text-align:center;padding:75px 20px}
+.hero h1{font-size:32px;line-height:1.5;margin:0 0 15px}
+.hero p{max-width:650px;margin:0 auto 25px;color:#e3edf1}
+.btn{display:inline-block;background:#d5b66a;color:#102b46;padding:12px 25px;border-radius:7px;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+section{padding:45px 7%;max-width:1100px;margin:auto}
+h2{text-align:center;color:#102b46;margin-bottom:25px}
+.intro{text-align:center;max-width:750px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:23px;border-radius:12px;box-shadow:0 3px 14px #102b4610}
+.card h3{color:#176b78;margin-top:0}
+.form-box{max-width:650px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 3px 14px #102b4610}
+input,textarea,select{width:100%;padding:13px;margin:8px 0 15px;border:1px solid #d7dee5;border-radius:7px;font:inherit;background:white}
+label{font-weight:bold;font-size:14px}
+button{font:inherit}
+.form-box button{width:100%;font-weight:bold}
+.note{font-size:13px;color:#687786}
+.contact{text-align:center;background:#eaf1f4;border-radius:12px}
+.contact a{margin:6px}
+footer{background:#102b46;color:white;text-align:center;padding:22px;font-size:13px}
+@media(max-width:600px){.hero h1{font-size:25px}nav{width:100%}nav a{margin:0 5px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Saudi Board Research Gateway</div>
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#register">التسجيل</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>بوابتك نحو البحث العلمي والنشر الدولي</h1>
+  <p>
+    منصة متخصصة في دعم الباحثين والأطباء في مسيرتهم البحثية،
+    وتوفير فرص التعاون العلمي والنشر في المجلات الدولية.
+  </p>
+  <a class="btn" href="#register">سجّل اهتمامك الآن</a>
+</div>
+
+<section id="about">
+  <h2>من نحن؟</h2>
+  <p class="intro">
+    Saudi Board Research Gateway منصة تهدف إلى ربط الأطباء
+    والباحثين بالفرص البحثية، وتسهيل المشاركة في المشاريع العلمية
+    والتعاون الأكاديمي، مع الاهتمام بجودة البحث وشفافية إجراءات النشر.
+  </p>
+</section>
+
+<section id="services">
+  <h2>خدماتنا</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>الفرص البحثية</h3>
+      <p>التعريف بالمشاريع البحثية المتاحة وتوضيح متطلباتها والمقاعد المتوفرة.</p>
+    </div>
+    <div class="card">
+      <h3>التعاون العلمي</h3>
+      <p>ربط الباحثين من مختلف التخصصات الطبية للعمل ضمن فرق بحثية.</p>
+    </div>
+    <div class="card">
+      <h3>دعم النشر العلمي</h3>
+      <p>المساعدة في إجراءات إعداد المخطوطات وتجهيزها للتقديم للمجلات العلمية.</p>
+    </div>
+    <div class="card">
+      <h3>المتابعة البحثية</h3>
+      <p>توضيح مراحل المشروع ومتطلبات المشاركة والتواصل مع فريق العمل.</p>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>تسجيل الباحثين</h2>
+  <p class="intro">املأ البيانات التالية وسنتواصل معك لمناقشة الفرص البحثية المناسبة.</p>
+  <div class="form-box">
+    <form id="researchForm">
+      <label>الاسم الكامل</label>
+      <input id="name" type="text" placeholder="الاسم كما في البيانات الرسمية" required>
+
+      <label>التخصص الطبي</label>
+      <input id="specialty" type="text" placeholder="مثال: Cardiology" required>
+
+      <label>الدولة والمدينة</label>
+      <input id="location" type="text" placeholder="الدولة - المدينة" required>
+
+      <label>البريد الإلكتروني</label>
+      <input id="email" type="email" placeholder="name@example.com" required>
+
+      <label>نوع الاهتمام البحثي</label>
+      <select id="interest" required>
+        <option value="">اختر نوع الاهتمام</option>
+        <option>المشاركة في فرصة بحثية</option>
+        <option>التعاون في مشروع بحثي</option>
+        <option>دعم إعداد ونشر بحث علمي</option>
+        <option>الاستفسار عن الخدمات</option>
+      </select>
+
+      <label>ملاحظات إضافية (اختياري)</label>
+      <textarea id="notes" rows="3" placeholder="اكتب استفسارك هنا"></textarea>
+
+      <button class="btn" type="submit">إرسال طلب التسجيل عبر واتساب</button>
+      <p class="note">سيتم فتح واتساب لإرسال بياناتك بعد مراجعتها من قبلك.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>يسعدنا تواصلك معنا</h2>
+  <p>للاستفسارات ومتابعة الفرص البحثية:</p>
+  <a class="btn" href="https://wa.me/966572557843">تواصل عبر واتساب</a>
+  <a class="btn" href="https://t.me/SaudiBoardResearchGateway">قناتنا على تلجرام</a>
+</section>
+
+<footer>
+  <p>Saudi Board Research Gateway</p>
+  <p>بوابتك للتعاون البحثي والنشر العلمي</p>
+  <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+document.getElementById("researchForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const fields = [
+    ["الاسم", "name"],
+    ["التخصص", "specialty"],
+    ["الدولة والمدينة", "location"],
+    ["البريد الإلكتروني", "email"],
+    ["نوع الاهتمام", "interest"],
+    ["ملاحظات", "notes"]
+  ];
+  let message = "طلب تسجيل جديد - Saudi Board Research Gateway\n\n";
+  fields.forEach(function(item){
+    message += item[0] + ": " +
+      document.getElementById(item[1]).value + "\n";
+  });
+  window.open("https://wa.me/966572557843?text=" + encodeURIComponent(message),"_blank");
+});
+</script>
+
+</body>
+</html>
